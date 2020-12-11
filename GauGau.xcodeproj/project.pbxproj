@@ -15,6 +15,8 @@
 		DCAD3DA02581C5E90057767B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD3D9E2581C5E90057767B /* LaunchScreen.storyboard */; };
 		DCAD3DAB2581C5EA0057767B /* GauGauTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD3DAA2581C5EA0057767B /* GauGauTests.swift */; };
 		DCAD3DB62581C5EA0057767B /* GauGauUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD3DB52581C5EA0057767B /* GauGauUITests.swift */; };
+		DCAD3DCD25822BA00057767B /*  SwippingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD3DCC25822BA00057767B /*  SwippingController.swift */; };
+		DCAD3DD2258324440057767B /* PageSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD3DD1258324440057767B /* PageSell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DCAD3DB12581C5EA0057767B /* GauGauUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GauGauUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAD3DB52581C5EA0057767B /* GauGauUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GauGauUITests.swift; sourceTree = "<group>"; };
 		DCAD3DB72581C5EA0057767B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD3DCC25822BA00057767B /*  SwippingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " SwippingController.swift"; sourceTree = "<group>"; };
+		DCAD3DD1258324440057767B /* PageSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				DCAD3D9C2581C5E90057767B /* Assets.xcassets */,
 				DCAD3D9E2581C5E90057767B /* LaunchScreen.storyboard */,
 				DCAD3DA12581C5E90057767B /* Info.plist */,
+				DCAD3DCC25822BA00057767B /*  SwippingController.swift */,
+				DCAD3DD1258324440057767B /* PageSell.swift */,
 			);
 			path = GauGau;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAD3D982581C5E60057767B /* ViewController.swift in Sources */,
+				DCAD3DCD25822BA00057767B /*  SwippingController.swift in Sources */,
 				DCAD3D942581C5E60057767B /* AppDelegate.swift in Sources */,
+				DCAD3DD2258324440057767B /* PageSell.swift in Sources */,
 				DCAD3D962581C5E60057767B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
