@@ -9,9 +9,23 @@ import UIKit
 
 class PageCell: UICollectionViewCell {
     
+    var page: Page? {
+        didSet {
+            guard let unwrappedPage = page else { return }
+            
+            imageView.image = UIImage(named: unwrappedPage.image)
+            
+            let attributeText = NSMutableAttributedString(string: "Gau Gau", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16)])
+            attributeText.append(NSMutableAttributedString(string: unwrappedPage.descriptionText, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.gray]))
+            
+            descriptionText.attributedText = attributeText
+            descriptionText.textAlignment = .center
+        }
+    }
+    
     let imageView: UIImageView = {
         let uiImage = UIImage(named: "universal_icon")
-        let imageView = UIImageView(image: uiImage)
+        let imageView = UIImageView(image: nil)
         
         // this enables autolayout for our imageView
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -87,8 +101,8 @@ class PageCell: UICollectionViewCell {
         imageView.centerXAnchor.constraint(equalTo: topContainerView.centerXAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: bottomContainerView.topAnchor, constant: -10).isActive = true
         // imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 80).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
         
         descriptionText.topAnchor.constraint(equalTo: topContainerView.bottomAnchor, constant: 10).isActive = true
         descriptionText.leftAnchor.constraint(equalTo: bottomContainerView.leftAnchor, constant: 40).isActive = true

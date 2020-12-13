@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "poseidon (2).png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "poseidon (1).png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "poseidon.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
